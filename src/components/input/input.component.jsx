@@ -6,27 +6,35 @@ class Input extends React.Component {
     super();
     this.state = { noteText: "" };
   }
+
+  MakeNotes = function (noteText) {
+    this.text = noteText;
+    this.color = "#FFD23F";
+    this.id = 0;
+  };
+
   handleChange = (event) => {
     this.setState({ noteText: event.target.value });
+  };
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.addNotes(new this.MakeNotes(this.state.noteText));
+    this.setState({ noteText: "" });
   };
   render() {
     return (
       <div>
-        <h1>React Notes</h1>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            this.setState({ noteText: "" });
-            this.props.addNotes(this.state.noteText);
-          }}
-        >
+        <h1 className="title">React Notes</h1>
+
+        <form onSubmit={this.handleSubmit} className="form">
           <input
             type="text"
             placeholder="Add your notes here!"
             onChange={this.handleChange}
             value={this.state.noteText}
+            className="input"
           ></input>
-          <button children="Add" />
+          <button children="Add" className="button" />
         </form>
       </div>
     );
