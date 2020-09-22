@@ -3,8 +3,8 @@ import "./main-cointeiner.styles.scss";
 import Notes from ".././notes/notes.component.jsx";
 const MainConteiner = (props) => {
   return (
-    <div className="conteiner">
-      <Notes listNotes={props.listNotes} />
+    <div className="container">
+      <Notes listNotes={props.listNotes} removeNotes={props.removeNotes} />
     </div>
   );
 };

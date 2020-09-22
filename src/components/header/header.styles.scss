@@ -1,0 +1,16 @@
+.header-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 0.75vh 0.75vw;
+  text-align: center;
+
+  button {
+    appearance: none;
+    border: none;
+    background-image: none;
+    background-color: #95ccf5;
+    border-radius: 50%;
+  }
+}
