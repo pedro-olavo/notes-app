@@ -11,6 +11,7 @@ class Input extends React.Component {
     this.text = noteText;
     this.color = "#39a0ed";
     this.subcolor = "#95ccf5";
+    this.date = new Date();
   };
 
   handleChange = (event) => {

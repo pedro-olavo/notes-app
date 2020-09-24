@@ -1,6 +1,5 @@
 import React from "react";
 import "./notes.styles.scss";
-import Footer from ".././footer/footer.component";
 import Text from ".././text/text.component";
 import Header from ".././header/header.component";
 const Notes = ({ listNotes, removeNotes }) => {
@@ -19,8 +18,12 @@ const Notes = ({ listNotes, removeNotes }) => {
               removeNotes={removeNotes}
               noteId={index}
             />
-            <Text text={element.text} />
-            <Footer subcolor={element.subcolor} color={element.color} />
+            <Text
+              text={element.text}
+              subcolor={element.subcolor}
+              color={element.color}
+              date={element.date}
+            />
           </div>
         );
       })}
