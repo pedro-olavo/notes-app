@@ -1,4 +1,4 @@
-Projeto feito para treinar React minhas habilidades em React, sem integração com back-end.
+Projeto feito para treinar minhas habilidades em React, sem integração com back-end.
 
 ## Available Scripts
 
