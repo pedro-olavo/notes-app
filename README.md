@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto feito para treinar React minhas habilidades em React, sem integração com back-end.
 
 ## Available Scripts
 
